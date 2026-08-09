@@ -1,52 +1,58 @@
-# Install Active Directory Domain Services (AD DS)
 
-This step covers installing the AD DS role on your Windows Server 2022 VM in Azure. 
-You will install the role first, then promote the server to a Domain Controller in Step 4.
+# 03 — Install Active Directory Domain Services (AD DS)
+
+This step documents the installation of the AD DS role on the Windows Server 2022
+VM in Azure. After installing the role, the server will be ready for promotion to
+a Domain Controller in Step 4.
 
 ---
 
 ## 01 — Open Server Manager
-Server Manager is where Windows Server roles and features are installed.
+I began the installation by opening **Server Manager**, which is used to manage
+roles and features on Windows Server.
 
 - Start Menu → Server Manager  
-- Wait for Server Manager to fully load  
-- Ensure the server shows as **Online**
+- Waited for Server Manager to fully load  
+- Confirmed the server was showing as **Online**
 
 ---
 
 ## 02 — Add Roles and Features
-This wizard installs the AD DS role required for domain controllers.
+Next, I launched the Add Roles and Features wizard to install the AD DS role.
 
 - Server Manager → **Manage** → **Add Roles and Features**  
-- Choose **Role-based or feature-based installation**  
-- Select your server (**ACT-DIR-LAB**)  
-- Continue to the **Roles** section
+- Selected **Role-based or feature-based installation**  
+- Chose the server (**ACT-DIR-LAB**)  
+- Continued to the **Roles** section
 
 ---
 
 ## 03 — Select AD DS Role
-**Critical Step**  
-Active Directory Domain Services is the core identity role.
+I selected the **Active Directory Domain Services** role, which is required for
+domain controllers.
 
-- Tick **Active Directory Domain Services**  
-- Accept required features when prompted  
-- Click **Next** until the confirmation page
+- Enabled **Active Directory Domain Services**  
+- Accepted the required features  
+- Continued through the wizard to the confirmation page
 
 ---
 
 ## 04 — Install the AD DS Role
-This installs the binaries needed before promotion.
+I proceeded with the installation of the AD DS binaries.
 
-- Click **Install**  
-- Wait for installation to complete  
-- Do **not** reboot unless prompted
+- Clicked **Install**  
+- Waited for the installation to complete  
+- No reboot was required at this stage
 
 ---
 
 ## 05 — Prepare for Domain Controller Promotion
-After installation, Server Manager shows a notification to promote the server.
+Once the role was installed, Server Manager displayed a notification indicating
+that the server was ready for promotion.
 
-- Look for the **yellow flag** in Server Manager  
-- Click **Promote this server to a domain controller**  
+- Clicked the **yellow notification flag**  
+- Selected **Promote this server to a domain controller**
 
 This begins **Step 4 — Domain Controller Promotion**.
+--
+
