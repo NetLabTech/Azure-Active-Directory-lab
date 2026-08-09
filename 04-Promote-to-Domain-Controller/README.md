@@ -1,102 +1,82 @@
 # 04 — Promote Server to Domain Controller
 
-This step covers promoting the Windows Server 2022 VM to a Domain Controller
-after installing the AD DS role. This creates the new forest and domain
-(lab.local) for the Active Directory lab.
+This step documents the promotion of the Windows Server 2022 VM to a Domain
+Controller, creating the new forest and domain (lab.local).
 
 ---
 
 ## 01 — Begin Promotion Wizard
-After AD DS installation, Server Manager shows a yellow notification flag.
+After installing AD DS, Server Manager displayed a yellow notification flag.
 
-- Open **Server Manager**
-- Click the **yellow flag** in the top-right corner
-- Select **Promote this server to a domain controller**
-
-This launches the Active Directory Domain Services Configuration Wizard.
+- I opened Server Manager
+- Clicked the yellow flag
+- Selected “Promote this server to a domain controller”
 
 ---
 
 ## 02 — Choose Deployment Type
-You are creating a brand-new domain and forest.
+I created a brand-new forest and domain:
 
-- Select **Add a new forest**
-- Enter your domain name: **lab.local**
-
-Click **Next**.
+- Deployment: Add a new forest
+- Domain name: lab.local
 
 ---
 
 ## 03 — Domain Controller Options
-These settings define how your DC will operate.
+I configured the DC options:
 
-- Forest functional level: **Windows Server 2022**
-- Domain functional level: **Windows Server 2022**
-- Tick **Domain Name System (DNS) Server**
-- Tick **Global Catalog (GC)** (enabled by default)
-- Leave **Read-only domain controller (RODC)** unchecked
-
-Set the **DSRM password** (Directory Services Restore Mode).
-
-Click **Next**.
+- Forest functional level: Windows Server 2022
+- Domain functional level: Windows Server 2022
+- DNS Server: Enabled
+- Global Catalog: Enabled
+- RODC: Not selected
+- Set the DSRM password
 
 ---
 
 ## 04 — DNS Options
-You may see a warning about delegation — this is normal.
+A delegation warning appeared, which is normal in a new forest.
 
-- Ignore the delegation warning
-- Click **Next**
+- I continued past the warning
 
 ---
 
 ## 05 — Additional Options
-The wizard automatically generates the NetBIOS name.
+The wizard generated the NetBIOS name automatically:
 
-- Confirm NetBIOS name: **LAB**
-
-Click **Next**.
+- NetBIOS name: LAB
 
 ---
 
 ## 06 — Paths
-Default paths are fine for a lab environment.
+I kept the default paths:
 
-- Leave:
-  - **Database**: C:\\Windows\\NTDS
-  - **Log files**: C:\\Windows\\NTDS
-  - **SYSVOL**: C:\\Windows\\SYSVOL
-
-Click **Next**.
+- Database: C:\Windows\NTDS
+- Logs: C:\Windows\NTDS
+- SYSVOL: C:\Windows\SYSVOL
 
 ---
 
 ## 07 — Review & Install
-The wizard performs a prerequisites check.
+I reviewed the configuration and started the installation.
 
-- Review summary
-- Click **Install**
-
-The server will automatically reboot when promotion completes.
+- The server rebooted automatically after promotion
 
 ---
 
 ## 08 — Verification After Reboot
-After reboot, confirm the promotion succeeded.
+After rebooting, I verified the promotion:
 
-- Log in using your local admin account
-- Open **Server Manager**
-- Check **AD DS** and **DNS** roles are present
-- Open **Active Directory Users and Computers**
-- Confirm the domain **lab.local** exists
-
-Your server is now a fully functional **Domain Controller**.
+- AD DS and DNS roles were present
+- Active Directory Users and Computers opened successfully
+- The domain lab.local was created
 
 ---
 
 ## Promotion Checkpoint
-- Domain created: **lab.local**
+- Domain created: lab.local
 - DNS installed and running
-- SYSVOL replicated and healthy
+- SYSVOL healthy
 - Server promoted successfully
 - Ready for OU structure and user creation
+
