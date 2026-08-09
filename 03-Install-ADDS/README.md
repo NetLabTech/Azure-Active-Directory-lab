@@ -1,4 +1,4 @@
-# 03 — Install Active Directory Domain Services (AD DS)
+# Install Active Directory Domain Services (AD DS)
 
 This step covers installing the AD DS role on your Windows Server 2022 VM in Azure. 
 You will install the role first, then promote the server to a Domain Controller in Step 4.
