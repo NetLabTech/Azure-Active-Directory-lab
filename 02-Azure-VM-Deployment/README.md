@@ -1,32 +1,65 @@
+# 02 — Azure VM Deployment
 
-## Overview
-This section documents the creation of the Windows Server 2022 Datacenter VM
-that will become the Domain Controller for the Active Directory lab.
+This section documents the deployment of the Windows Server 2022 Datacenter VM
+in Azure. This VM will later be promoted to a Domain Controller.
+
+---
 
 ## Resource Group
+I created a dedicated resource group for the lab:
+
 - Resource Group: ACT-D-LAB
 - Region: East US (Zone 3)
 
+---
+
 ## Virtual Machine Configuration
+I deployed the Windows Server 2022 VM with the following settings:
+
 - VM Name: ACT-DIR-LAB
 - Image: Windows Server 2022 Datacenter
 - Size: Standard DC1ds v3 (1 vCPU, 8GB RAM)
 - Admin Username: ActiveD
 
+---
+
 ## Networking
+I configured the VM networking as follows:
+
 - Virtual Network: ACT-DIR-LAB-vnet
 - Subnet: default
 - Public IP: Automatically assigned
 - Network Security Group: Basic
 - Inbound Rule: RDP (TCP 3389)
 
+---
+
+## Static Private IP Configuration
+To ensure stable AD DS and DNS functionality, I changed the private IP from
+Dynamic to Static.
+
+### Steps Performed
+- Opened the VM in Azure Portal
+- Navigated to Networking → Network Interface
+- Selected IP Configuration
+- Switched Private IP from Dynamic → Static
+- Saved changes
+
+### Reason
+Domain Controllers require a consistent private IP to avoid issues with:
+- DNS records
+- Domain join operations
+- AD DS replication
+
+---
+
 ## RDP Access
-Connected using Windows App (macOS):
+I connected to the VM using the Windows App on macOS:
+
 - Public IP: 20.115.45.35
 - Username: ActiveD
 
-## Static Private IP
-Changed private IP from Dynamic → Static to prevent DNS and AD DS issues.
+---
 
 ## Deployment Checkpoint
 - VM running successfully
