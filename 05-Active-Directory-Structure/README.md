@@ -42,26 +42,24 @@ Each account was created with:
 
 - A unique username  
 - A temporary password  
-- “User must change password at next logon” enabled  
+- “User must change password at next logon” enabled
+
+  ![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/84414b5dca110a5a6be2dca79655dd663cd95ad6/05-Active-Directory-Structure/Copy%20user%20in%20group%20to%20another%20user%2018.01.41.png)
 
 These accounts will be used later for login testing and GPO validation.
 
 ---
+## 03 — Creating a Security Group
 
-## 03 — Creating Security Groups
-Inside the **Lab Groups** OU, I created security groups to represent department
-roles and access levels.
+Inside the **Lab Groups** OU, I created a **Security Group** to represent the HR department’s access level.
 
-Groups created:
+Group created:
 
-- **IT-Admins**
-- **HR-Staff**
-- **Sales-Team**
-- **Lab-Users**
+- **HR‑Staff**
 
-I added the appropriate users to each group based on their department.  
-This prepares the domain for permission-based access control and future GPO
-targeting.
+I then added **Sarah O’Connor** to the HR‑Staff group.  
+This ensures she receives the correct permissions and prepares the domain for future GPO targeting and access control.
+![image alt](
 
 ## 04 – Copying an Existing User to Create a New One
 
