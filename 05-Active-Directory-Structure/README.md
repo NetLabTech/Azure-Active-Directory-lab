@@ -29,6 +29,8 @@ for future GPO and security policy testing.
 Inside the **Lab Users** OU, I created several test accounts to simulate real
 domain users.
 
+![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/087e57a41ca8bc04d66031280563b793d80c875d/05-Active-Directory-Structure/Add%20user%20Sarah%20O.53.28.png)
+
 Examples of accounts I added:
 
 - **John.Doe**
