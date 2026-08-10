@@ -12,13 +12,9 @@ After promoting the server to a Domain Controller, I opened **Active Directory U
 I created the following OUs:
 
 - **Lab Users**
-- **Lab Computers**
 - **Lab Groups**
 - **Service Accounts**
-- **Admin Accounts**
-- **IT Department**
 - **HR Department**
-- **Sales Department**
 
 This structure keeps users, groups, and devices organized and prepares the domain
 for future GPO and security policy testing.
@@ -33,10 +29,9 @@ domain users.
 
 Examples of accounts I added:
 
-- **John.Doe**
-- **Sarah.Connor**
-- **Michael.Smith**
-- **Emma.Jones**
+- **Sarah O Connor**
+- **Mike Davidson
+- **Thomas Church
 
 Each account was created with:
 
