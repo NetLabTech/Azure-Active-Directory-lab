@@ -61,20 +61,25 @@ I added the appropriate users to each group based on their department.
 This prepares the domain for permission-based access control and future GPO
 targeting.
 
----
+## 04 – Copying an Existing User to Create a New One
 
-## 04 — Computer Accounts (Optional)
-Although no clients are joined yet, I prepared the **Lab Computers** OU for
-future Windows 10/11 domain joins.
+To speed up user creation and ensure consistent permissions, I used the **Copy Object** feature in Active Directory. This allows a new user account to inherit the original user’s:
 
-This OU will be used later when testing:
+- OU location  
+- Group memberships  
+- Account properties  
+- Password policies  
 
-- Login policies  
-- Software deployment  
-- GPO enforcement  
-- Device management  
+In this case, I copied **Sarah O’Connor’s** account to create a new HR user:
 
----
+- **New user:** Mike Davidson  
+- **Logon name:** Mike.Davidson@lab.local  
+- **Inherited group:** HR‑Staff  
+- **Password:** Set manually  
+- **User must change password at next logon:** Enabled  
+
+This method is ideal for onboarding users who require identical access permissions within the same department. It ensures consistency and reduces manual configuration time.
+
 
 ## 05 — Verification
 After creating the OUs, users, and groups, I verified the structure in ADUC:
