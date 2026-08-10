@@ -29,9 +29,9 @@ domain users.
 
 Examples of accounts I added:
 
-- **Sarah O Connor**
-- **Mike Davidson
-- **Thomas Church
+- Sarah O Connor
+- Mike Davidson
+- Thomas Church
 
 Each account was created with:
 
