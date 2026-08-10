@@ -21,6 +21,9 @@ I deployed the Windows Server 2022 VM with the following settings:
 - Size: Standard DC1ds v3 (1 vCPU, 8GB RAM)
 - Admin Username: ActiveD
 
+
+![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/b86045a9abf29bc8a58e3fad2b5657f073c60747/overview%20of%20VM%20in%20Azure%20interface.png)
+
 ---
 
 ## Networking
