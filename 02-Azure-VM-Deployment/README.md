@@ -56,8 +56,9 @@ Domain Controllers require a consistent private IP to avoid issues with:
 
 ---
 
-## RDP Access
-I connected to the VM using the Windows App on macOS:
+## RDP Access VS Bastion
+I choose RDP because connecting via Bastion is a lot more costly for this demonstration LAB. 
+SO I connected to the VM using the Remote Desktop on PC and the Windows App on macOS:
 
 - Public IP: 20.115.45.35
 - Username: ActiveD
