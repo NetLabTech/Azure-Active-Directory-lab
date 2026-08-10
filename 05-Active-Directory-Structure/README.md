@@ -83,6 +83,7 @@ In this case, I copied **Sarah O’Connor’s** account to create a new HR user:
 
 This method is ideal for onboarding users who require identical access permissions within the same department. It ensures consistency and reduces manual configuration time.
 
+![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/3467343fcdb89c66449d6c6a56f454b4d18fe21e/05-Active-Directory-Structure/showing%20copied%20user%20in%20group%20.png)
 
 ## 05 — Verification
 After creating the OUs, users, and groups, I verified the structure in ADUC:
