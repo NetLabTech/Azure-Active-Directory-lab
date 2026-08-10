@@ -6,7 +6,7 @@ After installing the AD DS role, I promoted the server to a Domain Controller an
 Below are the verification screenshots confirming the server was successfully promoted:
 
 
-
-![Domain Controller Properties](ACTUAL_FILENAME_1.png)
+![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/7682772c9b1e078b509e6b1dd1842e4aed3d4e3a/Screenshot%202026-08-10%20230647.png)
+![image alt](
 
 ![Global Catalog & DNS Details](ACTUAL_FILENAME_2.png)
