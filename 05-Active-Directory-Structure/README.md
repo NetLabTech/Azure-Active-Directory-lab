@@ -59,7 +59,8 @@ Group created:
 
 I then added **Sarah O’Connor** to the HR‑Staff group.  
 This ensures she receives the correct permissions and prepares the domain for future GPO targeting and access control.
-![image alt](
+
+![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/f2e8b1762b1757e12876bf8b89b692b50461f956/05-Active-Directory-Structure/assign%20sarah%20%20to%20group.png)
 
 ## 04 – Copying an Existing User to Create a New One
 
