@@ -7,6 +7,5 @@ Below are the verification screenshots confirming the server was successfully pr
 
 
 ![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/7682772c9b1e078b509e6b1dd1842e4aed3d4e3a/Screenshot%202026-08-10%20230647.png)
-![image alt](
+![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/1102f0064aec258137554122a9a2e99065ad0bd3/Screenshot%202026-08-10%20230727.png)
 
-![Global Catalog & DNS Details](ACTUAL_FILENAME_2.png)
