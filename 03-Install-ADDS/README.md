@@ -25,7 +25,7 @@ Next, I launched the Add Roles and Features wizard to install the AD DS role.
 - Chose the server (**ACT-DIR-LAB**)  
 - Continued to the **Roles** section
 
----
+![images alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/7519de92f98ac304e239c6e1caa7f13ee4c63954/adding%20roles%20and%20features.png)
 
 ## 03 — Select AD DS Role
 I selected the **Active Directory Domain Services** role, which is required for
