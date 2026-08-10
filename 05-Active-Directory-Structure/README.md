@@ -44,7 +44,7 @@ Each account was created with:
 - A temporary password  
 - “User must change password at next logon” enabled
 
-  ![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/84414b5dca110a5a6be2dca79655dd663cd95ad6/05-Active-Directory-Structure/Copy%20user%20in%20group%20to%20another%20user%2018.01.41.png)
+  ![image alt]
 
 These accounts will be used later for login testing and GPO validation.
 
