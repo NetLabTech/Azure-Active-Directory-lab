@@ -79,6 +79,8 @@ In this case, I copied **Sarah O’Connor’s** account to create a new HR user:
 - **Password:** Set manually  
 - **User must change password at next logon:** Enabled  
 
+![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/b72efb791ee366629e2ad560615e5c3b80d9304e/05-Active-Directory-Structure/Copy%20user%20in%20group%20to%20another%20user%2018.01.41.png)
+
 This method is ideal for onboarding users who require identical access permissions within the same department. It ensures consistency and reduces manual configuration time.
 
 
@@ -89,6 +91,7 @@ After creating the OUs, users, and groups, I verified the structure in ADUC:
 - User accounts were created successfully  
 - Groups were visible and populated  
 - Domain structure looked clean and organized  
+
 
 The domain is now ready for Group Policy configuration and client device
 integration.
