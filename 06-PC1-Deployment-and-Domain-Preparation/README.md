@@ -16,7 +16,7 @@ Configuration:
 - Image: Windows Server 2022 Datacenter (Gen2)
 - Size: Standard DC1ds v3
 
-
+![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/45c8ed717408ab5fa7f2d99a66e77254d79e02c3/Create%20a%20PC1%20VM.png)
 (Insert screenshot)
 
 ---
