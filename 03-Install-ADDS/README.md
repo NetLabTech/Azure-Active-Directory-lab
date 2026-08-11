@@ -54,9 +54,9 @@ When the AD DS configuration wizard opened, I selected **Add a new forest** and 
 This step is what creates the entire Active Directory structure for the lab, including the domain namespace and the forest foundation.
 Once I confirmed the domain name, the wizard continued with the domain controller promotion process.
 
-**Screenshot:**  
-(Insert screenshot of “Add a new forest” wizard here)
 
+
+![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/c9094dee3a78e635bd8f4b0d45d0e1c1a9b6118c/Screenshot%202026-08-11%20at%2023.25.19.png)
 
 - Clicked the **yellow notification flag**  
 - Selected **Promote this server to a domain controller**
