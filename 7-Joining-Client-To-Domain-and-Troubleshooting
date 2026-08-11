@@ -1,0 +1,62 @@
+# 7 - Joining Client PC1 to the Domain (with Troubleshooting)
+
+In this section, I joined **PC1** to the **lab.local** domain, fixed DNS issues, verified connectivity, and confirmed the computer object inside Active Directory.
+This is where everything finally connects together.
+
+---
+## 1. Connecting to PC1
+
+I connected to the PC1 VM using Remote Desktop and logged in with the local administrator account (`ActiveD`).  
+PC1 is running in the same VNet as my domain controller.
+
+
+## 2. Attempting the Domain Join (and the First Error)
+
+I tried to move the PC from a WORKGROUP into the **lab.local** domain by manually typing the domain name into the system settings.
+As soon as I attempted the join, Windows threw the domain controller error saying it couldn’t contact an AD DC. 
+This confirmed something wasn’t right with the network configuration.
+
+**Screenshot:**  
+(Insert Step 2 screenshots here)
+
+---
+
+## 3. DNS Troubleshooting
+
+After the domain join failed, I checked PC1’s network settings using `ipconfig /all` and saw it was still using the default Azure DNS server. 
+That explained why it couldn’t find the domain controller. 
+To fix it, I went into the network settings and manually updated the IPv4 DNS to point to my domain controller’s IP address (10.0.0.4).
+Once I saved the change, DNS resolution started working correctly.
+
+**Screenshot 1:**  
+(Insert screenshot of ipconfig showing Azure DNS here)
+
+**Screenshot 2:**  
+(Insert screenshot of IPv4 properties with 10.0.0.4 entered here)
+
+## 4. Joining the Domain Successfully
+
+After fixing the DNS issue, I went back and entered **lab.local** again as the domain name. 
+This time Windows immediately prompted me for my domain credentials, so I entered my `ActiveD` username and password. 
+The join went through without any errors, and I got the “Welcome to the lab.local domain” confirmation message.
+
+**Screenshot 1:**  
+(Insert screenshot of credential prompt here)
+
+**Screenshot 2:**  
+(Insert screenshot of “Welcome to the lab.local domain” success message here)
+
+## 5. Verifying Connectivity and Domain Registration
+
+After restarting the PC1 VM the domain join succeeded, I tested connectivity by pinging the domain controller using its DNS name. 
+The ping resolved to `10.0.0.4` and replied instantly, confirming PC1 could now reach ACT-DIR-LAB through DNS.
+I then opened Active Directory Users and Computers on the domain controller and confirmed that **PC1** appeared inside the **Computers** folder, 
+showing that the domain join fully registered.
+
+**Screenshot 1:**  
+(Insert screenshot of successful ping here)
+
+**Screenshot 2:**  
+(Insert screenshot of PC1 inside ADUC here)
+
+
