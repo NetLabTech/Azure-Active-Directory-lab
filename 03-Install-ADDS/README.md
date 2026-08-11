@@ -11,8 +11,7 @@ a Domain Controller in Step 4.
 I began the installation by opening **Server Manager**, which is used to manage
 roles and features on Windows Server.
 
-- Start Menu → Server Manager  
-- Waited for Server Manager to fully load  
+- Start Menu → Server Manager   
 - Confirmed the server was showing as **Online**
 
 ---
