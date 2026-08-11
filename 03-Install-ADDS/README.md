@@ -49,6 +49,15 @@ I proceeded with the installation of the AD DS binaries.
 Once the role was installed, Server Manager displayed a notification indicating
 that the server was ready for promotion.
 
+06 — Create a New Forest (lab.local)
+When the AD DS configuration wizard opened, I selected **Add a new forest** and entered **lab.local** as the root domain name. 
+This step is what creates the entire Active Directory structure for the lab, including the domain namespace and the forest foundation.
+Once I confirmed the domain name, the wizard continued with the domain controller promotion process.
+
+**Screenshot:**  
+(Insert screenshot of “Add a new forest” wizard here)
+
+
 - Clicked the **yellow notification flag**  
 - Selected **Promote this server to a domain controller**
 
