@@ -17,7 +17,7 @@ Configuration:
 - Size: Standard DC1ds v3
 
 ![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/45c8ed717408ab5fa7f2d99a66e77254d79e02c3/Create%20a%20PC1%20VM.png)
-(Insert screenshot)
+
 
 ---
 
@@ -30,7 +30,8 @@ PC1 must be placed in the same VNet as ADSERVER.
 - Private IP: 10.0.0.5 (Dynamic)
 - Public IP: Enabled
 
-(Insert screenshot)
+![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/ee387dc08ed919c0bb0440c37d88bea29883de05/ip%20same%20subnet%20as%20Domain%20COntroller.png)
+
 
 ---
 
@@ -44,7 +45,7 @@ To allow PC1 to locate the domain controller, update its NIC DNS settings:
 - Choose Custom
 - Enter: 10.0.0.4
 
-(Insert screenshot)
+![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/ee387dc08ed919c0bb0440c37d88bea29883de05/make%20sure%20DNS%20server%20ip.png)
 
 ---
 
@@ -57,4 +58,4 @@ PC1 should now show:
 - Virtual network: ACT-DIR-LAB-vnet
 - DNS: 10.0.0.4 (custom)
 
-(Insert screenshot)
+![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/ee387dc08ed919c0bb0440c37d88bea29883de05/overveiw%20of%20PC1%20VM.png)
