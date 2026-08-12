@@ -28,7 +28,7 @@ This confirmed something wasn’t right with the network configuration.
 
 ## 3. DNS Troubleshooting
 
-After the domain join failed, I checked PC1’s network settings using `ipconfig /all` and saw it was still using the default Azure DNS server. 
+So I checked PC1’s network settings using `ipconfig /all` and saw it was still using the default Azure DNS server. 
 That explained why it couldn’t find the domain controller. 
 To fix it, I went into the network settings and manually updated the IPv4 DNS to point to my domain controller’s IP address (10.0.0.4).
 Once I saved the change, DNS resolution started working correctly.
