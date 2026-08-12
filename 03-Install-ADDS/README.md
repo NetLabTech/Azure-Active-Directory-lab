@@ -61,8 +61,8 @@ Once I confirmed the domain name, the wizard continued with the domain controlle
 ![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/5a8ed469a225d690cd067cd105feb344b53e6540/Screenshot%202026-08-12%20at%2009.24.02.png)
 
 
-- Clicked the **yellow notification flag**  
 - Selected **Promote this server to a domain controller**
+- Reboot VM
 
 This begins **Step 4 — Domain Controller Promotion**.
 --
