@@ -30,10 +30,11 @@ This confirmed something wasn’t right with the network configuration.
 
 So I checked PC1’s network settings using `ipconfig /all` and saw it was still using the default Azure DNS server. 
 That explained why it couldn’t find the domain controller. 
-To fix it, I went into the network settings and manually updated the IPv4 DNS to point to my domain controller’s IP address (10.0.0.4).
-Once I saved the change, DNS resolution started working correctly.
 
 ![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/124953838eea8bbb48f99ec4f15456fa5a0366c0/2%20troubleshoot%20CmD%20promt%20showing%20the%20wrong%20dns%20server.png)
+
+To fix it, I went into the network settings and manually updated the IPv4 DNS to point to my domain controller’s IP address (10.0.0.4).
+Once I saved the change, DNS resolution started working correctly.
 
 ![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/124953838eea8bbb48f99ec4f15456fa5a0366c0/3%20trouble%20shoot%20make%20the%20prefered%20dns%20server%20teh%20ip%20fo%20the%20DC%2010.0.0.4.png)
 
@@ -42,9 +43,11 @@ Once I saved the change, DNS resolution started working correctly.
 
 After fixing the DNS issue, I went back and entered **lab.local** again as the domain name. 
 This time Windows immediately prompted me for my domain credentials, so I entered my `ActiveD` username and password. 
-The join went through without any errors, and I got the “Welcome to the lab.local domain” confirmation message.
+
 
 ![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/124953838eea8bbb48f99ec4f15456fa5a0366c0/4%20PC1%20name%20domain%20try%20again.%20asks%20for%20user%20and%20pass.png)
+
+The join went through without any errors, and I got the “Welcome to the lab.local domain” confirmation message.
 
 ![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/124953838eea8bbb48f99ec4f15456fa5a0366c0/5%20welcome%20to%20lab.local%20domain.png)
 
