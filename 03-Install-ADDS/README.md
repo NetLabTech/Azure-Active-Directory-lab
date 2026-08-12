@@ -58,7 +58,8 @@ Once I confirmed the domain name, the wizard continued with the domain controlle
 
 
 
-![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/c9094dee3a78e635bd8f4b0d45d0e1c1a9b6118c/Screenshot%202026-08-11%20at%2023.25.19.png)
+![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/5a8ed469a225d690cd067cd105feb344b53e6540/Screenshot%202026-08-12%20at%2009.24.02.png)
+
 
 - Clicked the **yellow notification flag**  
 - Selected **Promote this server to a domain controller**
