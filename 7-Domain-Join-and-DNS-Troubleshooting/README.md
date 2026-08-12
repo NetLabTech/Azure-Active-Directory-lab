@@ -80,6 +80,8 @@ To allow standard domain users (such as Sarah, Mike, or the HR Team group) to lo
 **Screenshot**
 Below is the screenshot showing Remote Desktop enabled and the dialog used to add domain users:
 
+![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/2fca6d3ec5057289f3eee0b28a99a0cd5ffcf9fe/Screenshot%202026-08-12%20at%2010.26.12.png)
+
 ![Step 7 — Remote Desktop Users](PASTE_YOUR_PERMALINK_HERE)
 
 
