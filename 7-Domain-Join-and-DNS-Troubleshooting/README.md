@@ -42,10 +42,8 @@ Once I saved the change, DNS resolution started working correctly.
 ## 4. Joining the Domain Successfully
 
 After fixing the DNS issue, I went back and entered **lab.local** again as the domain name. 
-This time Windows immediately prompted me for my domain credentials, so I entered my `ActiveD` username and password. 
+This time Windows immediately prompted me for my domain credentials, so I entered my username and password. 
 
-
-![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/124953838eea8bbb48f99ec4f15456fa5a0366c0/4%20PC1%20name%20domain%20try%20again.%20asks%20for%20user%20and%20pass.png)
 
 The join went through without any errors, and I got the “Welcome to the lab.local domain” confirmation message.
 
