@@ -14,10 +14,14 @@ PC1 is running in the same VNet as my domain controller.
 ## 2. Attempting the Domain Join (and the First Error)
 
 I tried to move the PC from a WORKGROUP into the **lab.local** domain by manually typing the domain name into the system settings.
+
+
+![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/124953838eea8bbb48f99ec4f15456fa5a0366c0/1%20PC1%20name%20and%20domain%20change.png)
+
 As soon as I attempted the join, Windows threw the domain controller error saying it couldn’t contact an AD DC. 
 This confirmed something wasn’t right with the network configuration.
 
-![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/124953838eea8bbb48f99ec4f15456fa5a0366c0/1%20PC1%20name%20and%20domain%20change.png)
+
 ![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/124953838eea8bbb48f99ec4f15456fa5a0366c0/2%20error%20for%20domain%20name%20memeber.png)
 
 ---
