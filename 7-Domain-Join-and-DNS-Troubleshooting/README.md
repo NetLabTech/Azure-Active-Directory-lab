@@ -54,3 +54,37 @@ showing that the domain join fully registered.
 ![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/124953838eea8bbb48f99ec4f15456fa5a0366c0/6%20ping%20DC's%20name%20(%20act-dir-lab%20from%20pc1.png)
 
 ![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/124953838eea8bbb48f99ec4f15456fa5a0366c0/7%20PC1%20shows%20up%20auto%20in%20DC%20computer%20folder.png)
+
+---
+
+### Step 6 — Moving PC1 into the Correct OU
+
+After confirming that PC1 successfully joined the domain and appeared inside the default **Computers** container, I moved it into the correct organizational unit for Branch 1.
+
+This ensures that PC1 receives the correct Group Policy Objects (GPOs) and follows the proper structure of the Active Directory hierarchy.
+
+---
+
+### Step 7 — Enabling Remote Desktop for Domain Users
+
+By default, Windows Server only allows members of the **Administrators** group to sign in via Remote Desktop.  
+To allow standard domain users (such as Sarah, Mike, or the HR Team group) to log in to **PC1**, they must be added to the **Remote Desktop Users** local group.
+
+**Steps Performed**
+1. Logged into **PC1** using the domain administrator account: `lab\Administrator`
+2. Opened **Settings → System → Remote Desktop**
+3. Selected **Remote Desktop Users**
+4. Added the required domain user/group from the `lab.local` domain
+5. Confirmed the user now appears in the Remote Desktop Users list
+
+**Screenshot**
+Below is the screenshot showing Remote Desktop enabled and the dialog used to add domain users:
+
+![Step 7 — Remote Desktop Users](PASTE_YOUR_PERMALINK_HERE)
+
+
+
+
+
+
+
