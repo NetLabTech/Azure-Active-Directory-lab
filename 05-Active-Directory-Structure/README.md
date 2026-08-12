@@ -50,9 +50,9 @@ Inside the **Lab Groups** OU, I created a **Security Group** to represent the HR
 
 Group created:
 
-- **HR‑Staff**
+- **HR‑Team**
 
-I then added **Sarah O’Connor** to the HR‑Staff group.  
+I then added **Sarah O’Connor** to the HR‑Team group.  
 This ensures she receives the correct permissions and prepares the domain for future GPO targeting and access control.
 
 ![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/f2e8b1762b1757e12876bf8b89b692b50461f956/05-Active-Directory-Structure/assign%20sarah%20%20to%20group.png)
@@ -70,7 +70,7 @@ In this case, I copied **Sarah O’Connor’s** account to create a new HR user:
 
 - **New user:** Mike Davidson  
 - **Logon name:** Mike.Davidson@lab.local  
-- **Inherited group:** HR‑Staff  
+- **Inherited group:** HR‑Team  
 - **Password:** Set manually  
 - **User must change password at next logon:** Enabled  
 
