@@ -55,10 +55,11 @@ The join went through without any errors, and I got the “Welcome to the lab.lo
 
 After restarting the PC1 VM the domain join succeeded, I tested connectivity by pinging the domain controller using its DNS name. 
 The ping resolved to `10.0.0.4` and replied instantly, confirming PC1 could now reach ACT-DIR-LAB through DNS.
+
+
 I then opened Active Directory Users and Computers on the domain controller and confirmed that **PC1** appeared inside the **Computers** folder, 
 showing that the domain join fully registered.
 
-![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/124953838eea8bbb48f99ec4f15456fa5a0366c0/6%20ping%20DC's%20name%20(%20act-dir-lab%20from%20pc1.png)
 
 ![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/124953838eea8bbb48f99ec4f15456fa5a0366c0/7%20PC1%20shows%20up%20auto%20in%20DC%20computer%20folder.png)
 
