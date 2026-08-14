@@ -31,8 +31,10 @@ When a workstation is off the corporate network, not connected to VPN, or unable
 3. Added the new account to the Administrators local group using: net localgroup administrators tempadmin /add 
 
 
+
+
 4. Verified the account now appears in the local user list using: net user
 
-
+![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/63ca3c32b0ebe025b51ca3737c571b28f9a37f41/showing%20tempadmin%20is%20anow%20an%20adminstrattor.png)
 
 
