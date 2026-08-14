@@ -82,5 +82,5 @@ If a workstation is no longer required, technicians may be asked to remove it fr
 9. Verified the PC object reappeared in Active Directory Users and Computers with its original security permissions and attributes  
 10. Confirmed the workstation can now rejoin or authenticate normally without rebuilding its computer object
 
-    
+ ![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/23cf341ab195e9acf83270689c8ab23dad68c824/screenshots2/showing%20the%20pc%20has%20been%20restored%20from%20deleted%20objects.png)   
 
