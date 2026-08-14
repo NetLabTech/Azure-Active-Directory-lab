@@ -31,3 +31,4 @@ net localgroup administrators tempadmin /add
 **Verified the account now appears in the local user list**
 ```powershell
 net user
+![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/1a0af429ff49b2ae668754460ca24ad97bec03d8/showing%20tempadmin%20is%20anow%20an%20adminstrattor.png)
