@@ -38,3 +38,22 @@ When a workstation is off the corporate network, not connected to VPN, or unable
 ![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/63ca3c32b0ebe025b51ca3737c571b28f9a37f41/showing%20tempadmin%20is%20anow%20an%20adminstrattor.png)
 
 
+### Step 3 — Delete the Temporary Local Administrator Account
+
+After using the `tempadmin` account to sign in locally and complete all required troubleshooting on the workstation that cannot reach the domain controller, the final step is to remove this temporary account. We do this to stay audit‑compliant and ensure no unnecessary local admin accounts remain on the device.
+
+**Steps Performed**
+1. Logged out of the temporary admin session after troubleshooting was completed  
+2. Opened PowerShell (Admin) on PC1  
+3. Removed `tempadmin` from the Administrators group using the appropriate command  
+4. Deleted the `tempadmin` local user account  
+5. Verified the account no longer appears in the local user list  
+6. Confirmed the workstation is now clean and ready to return to normal domain‑based authentication
+
+### Step 4 — Enable Deleted Objects (Recycle Bin) for Safe Computer Removal
+
+If a company requests that a workstation be removed from Active Directory because it is no longer needed, it is best practice to enable the Deleted Objects (Recycle Bin) feature in Active Directory Administrative Center. This allows administrators to safely delete the computer object while retaining the ability to restore it later with all of its original security permissions, group memberships, and GPO inheritance.
+
+This is important because companies often change their mind weeks or months later. Without the Recycle Bin enabled, deleting a computer object permanently removes its SID, permissions, and trust relationships, requiring the workstation to be fully rejoined and reconfigured. By enabling Deleted Objects, MSP technicians can restore the PC exactly as it was, avoiding unnecessary rebuilds and ensuring audit‑compliant change control.
+
+
