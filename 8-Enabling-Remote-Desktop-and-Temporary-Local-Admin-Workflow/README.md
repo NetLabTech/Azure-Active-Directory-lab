@@ -16,4 +16,12 @@ Below is the screenshot showing Remote Desktop enabled and the dialog used to ad
 
 ![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/2fca6d3ec5057289f3eee0b28a99a0cd5ffcf9fe/Screenshot%202026-08-12%20at%2010.26.12.png)
 
-![Step 7 — Remote Desktop Users](PASTE_YOUR_PERMALINK_HERE)
+### Step 2 — Create a Temporary Local Administrator Account
+
+When a workstation is **off the corporate network**, **not connected to VPN**, or **unable to authenticate domain credentials**, MSP technicians often need a temporary local admin account to perform troubleshooting or install RMM agents. This account is only used during off‑domain access and must be deleted afterwards to remain audit‑compliant.
+
+**Steps Performed**
+1. Opened **PowerShell (Admin)** on **PC1**  
+2. Created a temporary local admin account named `tempadmin`  
+   ```powershell
+   net user tempadmin Temppass1234! /add
