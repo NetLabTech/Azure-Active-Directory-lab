@@ -25,3 +25,9 @@ When a workstation is **off the corporate network**, **not connected to VPN**, o
 2. Created a temporary local admin account named `tempadmin`  
    ```powershell
    net user tempadmin Temppass1234! /add
+**Added the new account to the Administrators local group**
+```powershell
+net localgroup administrators tempadmin /add
+**Verified the account now appears in the local user list**
+```powershell
+net user
