@@ -68,14 +68,17 @@ If a workstation is no longer required, technicians may be asked to remove it fr
 3. Selected the PC object (e.g., PC1)  
 4. Chose “Delete” and confirmed the deletion 
 
-
+![image alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/5070b5037660848f9e6ea065eb4713246c6b2162/screenshots2/are%20you%20sure%20you%20want%20to%20delete%20PC1.png)
 
 5. Opened Active Directory Administrative Center  
 6. Selected “Deleted Objects” under the domain  
-7. Located the deleted PC object in the list  
+7. Located the deleted PC object in the list
+   
+
+ 
 8. Restored the PC using either:  
    - **Restore** (returns it to its original OU), or  
    - **Restore To…** (allows choosing a different OU)  
-9. Verified the PC object reappeared in Active Directory Users and Computers with its original security permissions and attributes  
-10. Confirmed the workstation can now rejoin or authenticate normally without rebuilding its computer object
+11. Verified the PC object reappeared in Active Directory Users and Computers with its original security permissions and attributes  
+12. Confirmed the workstation can now rejoin or authenticate normally without rebuilding its computer object
 
