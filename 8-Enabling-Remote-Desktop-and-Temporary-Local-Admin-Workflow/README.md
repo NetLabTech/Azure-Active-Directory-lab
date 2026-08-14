@@ -58,4 +58,24 @@ If a company requests that a workstation be removed from Active Directory becaus
 
 This is important because companies often change their mind weeks or months later. Without the Recycle Bin enabled, deleting a computer object permanently removes its SID, permissions, and trust relationships, requiring the workstation to be fully rejoined and reconfigured. By enabling Deleted Objects, MSP technicians can restore the PC exactly as it was, avoiding unnecessary rebuilds and ensuring audit‑compliant change control.
 
+### Step 5 — Delete an Unneeded PC and Restore It Using Deleted Objects
+
+If a workstation is no longer required, technicians may be asked to remove it from Active Directory. When Deleted Objects (Recycle Bin) is enabled, the computer object can be safely deleted and later restored with all of its original permissions, group memberships, and attributes intact.
+
+**Steps Performed**
+1. Opened Active Directory Users and Computers  
+2. Navigated to the correct OU containing the workstation (e.g., Branch1 → Computers)  
+3. Selected the PC object (e.g., PC1)  
+4. Chose “Delete” and confirmed the deletion 
+
+
+
+5. Opened Active Directory Administrative Center  
+6. Selected “Deleted Objects” under the domain  
+7. Located the deleted PC object in the list  
+8. Restored the PC using either:  
+   - **Restore** (returns it to its original OU), or  
+   - **Restore To…** (allows choosing a different OU)  
+9. Verified the PC object reappeared in Active Directory Users and Computers with its original security permissions and attributes  
+10. Confirmed the workstation can now rejoin or authenticate normally without rebuilding its computer object
 
