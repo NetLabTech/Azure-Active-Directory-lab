@@ -54,6 +54,8 @@ After using the `tempadmin` account to sign in locally and complete all required
 
 If a company requests that a workstation be removed from Active Directory because it is no longer needed, it is best practice to enable the Deleted Objects (Recycle Bin) feature in Active Directory Administrative Center. This allows administrators to safely delete the computer object while retaining the ability to restore it later with all of its original security permissions, group memberships, and GPO inheritance.
 
+
+
 This is important because companies often change their mind weeks or months later. Without the Recycle Bin enabled, deleting a computer object permanently removes its SID, permissions, and trust relationships, requiring the workstation to be fully rejoined and reconfigured. By enabling Deleted Objects, MSP technicians can restore the PC exactly as it was, avoiding unnecessary rebuilds and ensuring audit‑compliant change control.
 
 
