@@ -82,7 +82,7 @@ I added **Mike Davidson (Mike.Davidson@lab.local)** under *Security Filter
  Open the **Delegation** tab → click **Advanced** to view detailed permissions.
  Scroll down and make sure **Read** and **Apply Group Policy** are both checked as **Allow** for Mike Davidson.
 
-
+![image-alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/cdb40b906da79bf1116af0b1fa175a1306dab79c/09-Group-Policy-Examples/remove%20authenticatted%20users%20.png)
 
 This setup ensures that Mike Davidson can read and apply the GPO, but not modify or delete it.  
 It’s a clean way to test user‑level GPO application without giving admin rights.
