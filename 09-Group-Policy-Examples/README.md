@@ -43,12 +43,14 @@ On the Domain Controller:
 1. Right‑click **Group Policy Objects** → **New**.
 2. Name it TEST GPO
 
-![image-alt](test-gpo-screenshot-goes-here.png)---
+![image-alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/9d1cf31d1aa91acb007e11a3bf63ddffa18facef/09-Group-Policy-Examples/made%20a%20new%20gpo(titled%20test%20gpo).png)
+
+---
   ```
    ```
 4. Click **OK**.  
    This creates an unlinked GPO that I can configure before applying it anywhere.
-![image-alt](test-gpo-screenshot-goes-here.png)---
+![image-alt]()---
 
 ### Step 3 — Check Default Security Filtering
 
