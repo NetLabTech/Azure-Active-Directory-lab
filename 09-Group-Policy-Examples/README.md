@@ -82,13 +82,14 @@ I added **Mike Davidson (Mike.Davidson@lab.local)** under *Security Filter
    TEST GPO
    ```
 4. Under the **Scope** tab, remove *Authenticated Users* and add:
-   ```
-   Mike Davidson (Mike.Davidson@lab.local)
-   ```
-5. Open the **Delegation** tab → click **Advanced** to view detailed permissions.
-6. Scroll down and make sure **Read** and **Apply Group Policy** are both checked as **Allow** for Mike Davidson.
 
-![image-alt]()
+![image-alt]
+ ![image-alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/8038bd3094235ff4b49fbe9ead9e48846a94602a/09-Group-Policy-Examples/testing%20out%20a%20user%20on%20secruity%20filter%2020%20at%2000.16.13.png)
+  
+6. Open the **Delegation** tab → click **Advanced** to view detailed permissions.
+7. Scroll down and make sure **Read** and **Apply Group Policy** are both checked as **Allow** for Mike Davidson.
+
+
 
 This setup ensures that Mike Davidson can read and apply the GPO, but not modify or delete it.  
 It’s a clean way to test user‑level GPO application without giving admin rights.
