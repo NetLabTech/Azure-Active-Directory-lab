@@ -43,7 +43,7 @@ On the Domain Controller:
 1. Right‑click **Group Policy Objects** → **New**.
 2. Name it TEST GPO
 
-![image-alt]()
+![image-alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/58c02b917e90c6eff62abd10a2e8a46960377d7d/09-Group-Policy-Examples/click%20on%20my%20test%20gpo%20%202026-08-19%20at%2023.41.40.png)
 
 ---
   ```
