@@ -59,35 +59,28 @@ On the Domain Controller:
 Whenever a new GPO is created, it automatically includes **Authenticated Users** under *Security Filtering*.  
 This is the default behaviour in Active Directory — it means the GPO will apply to any user or computer that successfully authenticates to the domain *once the GPO is linked somewhere*.
 
-1. Select **TEST GPO**.
-2. Go to the **Scope** tab.
-3. Under **Security Filtering**, you’ll see:
+ Select **TEST GPO**.
+Go to the **Scope** tab.
+ Under **Security Filtering**, you’ll see:
    ```
    Authenticated Users
    ```
    Right now, the GPO doesn’t affect anything because it isn’t linked to an OU yet.
-4. Later on, I can remove *Authenticated Users* and replace it with specific groups if I want more control.
+   Next, I can remove *Authenticated Users* and replace it with specific groups if I want more control.
+![image-alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/cdb40b906da79bf1116af0b1fa175a1306dab79c/09-Group-Policy-Examples/remove%20authenticatted%20users%20.png)
 
 ---
 
 ### Step 4 — Link the GPO and Apply Permissions to a User
 
+
 For this test, I’m applying the GPO to a specific **user account** instead of a computer.  
 I added **Mike Davidson (Mike.Davidson@lab.local)** under *Security Filtering* so the policy only applies to that user.
 
-1. In **Group Policy Management**, right‑click the target OU (for example, `Branch1`).
-2. Choose **Link an Existing GPO**.
-3. Select:
-   ```
-   TEST GPO
-   ```
-4. Under the **Scope** tab, remove *Authenticated Users* and add:
-
-![image-alt]
  ![image-alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/8038bd3094235ff4b49fbe9ead9e48846a94602a/09-Group-Policy-Examples/testing%20out%20a%20user%20on%20secruity%20filter%2020%20at%2000.16.13.png)
   
-6. Open the **Delegation** tab → click **Advanced** to view detailed permissions.
-7. Scroll down and make sure **Read** and **Apply Group Policy** are both checked as **Allow** for Mike Davidson.
+ Open the **Delegation** tab → click **Advanced** to view detailed permissions.
+ Scroll down and make sure **Read** and **Apply Group Policy** are both checked as **Allow** for Mike Davidson.
 
 
 
