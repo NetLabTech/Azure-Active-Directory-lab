@@ -70,6 +70,40 @@ This is the default behaviour in Active Directory — it means the GPO will appl
 
 ---
 
+### Step 4 — Link the GPO and Apply Permissions to a User
+
+For this test, I’m applying the GPO to a specific **user account** instead of a computer.  
+I added **Mike Davidson (Mike.Davidson@lab.local)** under *Security Filtering* so the policy only applies to that user.
+
+1. In **Group Policy Management**, right‑click the target OU (for example, `Branch1`).
+2. Choose **Link an Existing GPO**.
+3. Select:
+   ```
+   TEST GPO
+   ```
+4. Under the **Scope** tab, remove *Authenticated Users* and add:
+   ```
+   Mike Davidson (Mike.Davidson@lab.local)
+   ```
+5. Open the **Delegation** tab → click **Advanced** to view detailed permissions.
+6. Scroll down and make sure **Read** and **Apply Group Policy** are both checked as **Allow** for Mike Davidson.
+
+![image-alt]()
+
+This setup ensures that Mike Davidson can read and apply the GPO, but not modify or delete it.  
+It’s a clean way to test user‑level GPO application without giving admin rights.
+
+---
+
+### ✅ Result
+The **TEST GPO** is now linked to the OU and scoped to the user account.  
+Mike Davidson has permission to read and apply the policy, confirming that the GPO is configured correctly for user‑based testing.
+
+
+
+
+
+
 ### Step 4 — Link the GPO to an OU
 1. Right‑click the OU I want to test with (I used `Branch1`).
 2. Choose **Link an Existing GPO**.
