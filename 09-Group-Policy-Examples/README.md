@@ -146,7 +146,7 @@ For this test, I removed *Authenticated Users* and added my specific computer 
 4. Click **Check Names** → **OK**.
 5. Confirm that **LAB\PC1** now appears under *Security Filtering*.
 
-![image-alt](security-filtering-pc1.png)
+![image-alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/02ec058df5b335b4a9c6cc71277dcf3bc7a58699/09-Group-Policy-Examples/PC1%20filter%20for%20GPO%20.png)
 
 This ensures the GPO only applies to the **PC1** computer object — perfect for isolated testing.
 
