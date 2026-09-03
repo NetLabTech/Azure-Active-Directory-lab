@@ -168,7 +168,7 @@ Next, I need to link the GPO so it actually applies to something in Active Dir
    ```
 4. Click **OK**.
 
-![image-alt](linked-gpo-branch1.png)
+![image-alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/1145aeee43d3a8e442cffed530383e6a913d7d5e/09-Group-Policy-Examples/shows%20the%20%20links%20.png)
 
 Now the GPO appears under **Branch1** in the left‑hand pane, meaning it’s active and linked to that OU.  
 Any computer objects inside **Branch1** (like **PC1**) will receive this policy when Group Policy updates.
