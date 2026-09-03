@@ -5,19 +5,6 @@
 In this part of the lab, I’m creating and testing Group Policy Objects (GPOs) inside my `lab.local` domain.  
 This is where I start controlling domain‑joined machines from one central place.
 
----
-
-## ⚙️ Lab Setup
-| Component | Details |
-|------------|----------|
-| Domain | lab.local |
-| Domain Controller | ACT-DIR-LAB |
-| Client PC | PC1.lab.local |
-| Admin Account | LAB\ACTIVED |
-
----
-
-## 🧠 Overview
 Group Policy lets me push settings to users and computers automatically.  
 Here I’m creating a simple test GPO, checking how it behaves by default, linking it to an OU, and confirming it applies on a domain‑joined client.
 
@@ -48,9 +35,9 @@ On the Domain Controller:
 ---
   ```
    ```
-4. Click **OK**.  
+3. Click **OK**.  
    This creates an unlinked GPO that I can configure before applying it anywhere.
-![image-alt]()---
+
 
 ### Step 3 — Check Default Security Filtering
 
