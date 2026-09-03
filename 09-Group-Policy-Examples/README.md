@@ -130,6 +130,54 @@ You’ll now see a list of defined settings under the GPO’s **Settings** tab.
 The **Disable Domain Firewall** GPO is now configured and ready for testing.  
 It demonstrates how computer-level policies apply to domain machines, separate from user-level configurations.
 
+### Step 7 — Set Security Filtering for the Target Computer
+
+Now that the **Disable Domain Firewall** GPO is created, I want to test it on a single domain‑joined machine — **PC1**.
+
+By default, every new GPO includes **Authenticated Users** under *Security Filtering*, which means it would apply to all domain‑authenticated users and computers.  
+For this test, I removed *Authenticated Users* and added my specific computer object.
+
+1. Go to the **Scope** tab of the GPO.
+2. Under **Security Filtering**, click **Add**.
+3. In the dialog box, type:
+   ```
+   PC1
+   ```
+4. Click **Check Names** → **OK**.
+5. Confirm that **LAB\PC1** now appears under *Security Filtering*.
+
+![image-alt](security-filtering-pc1.png)
+
+This ensures the GPO only applies to the **PC1** computer object — perfect for isolated testing.
+
+---
+
+### Step 8 — Link the GPO to an Organizational Unit (OU)
+
+Next, I need to link the GPO so it actually applies to something in Active Directory.
+
+1. In **Group Policy Management**, expand the domain tree:
+   ```
+   lab.local
+     └── Branch1
+   ```
+2. Right‑click **Branch1** → **Link an Existing GPO**.
+3. Select:
+   ```
+   Disable Domain Firewall
+   ```
+4. Click **OK**.
+
+![image-alt](linked-gpo-branch1.png)
+
+Now the GPO appears under **Branch1** in the left‑hand pane, meaning it’s active and linked to that OU.  
+Any computer objects inside **Branch1** (like **PC1**) will receive this policy when Group Policy updates.
+
+---
+
+### ✅ Result
+The **Disable Domain Firewall** GPO is now live and scoped to a single computer (**PC1**) within the **Branch1** OU.  
+This setup is ideal for testing computer‑based GPOs before rolling them out domain‑wide.
 
 
 
