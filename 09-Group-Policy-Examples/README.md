@@ -95,7 +95,7 @@ This is purely for testing purposes — not something you’d normally do in pro
    ```
 3. Leave **Source Starter GPO** as `(none)` and click **OK**.
 
-![image-alt](new-gpo-disable-domain-firewall.png)
+![image-alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/62f50e9250ea66498495d24d77b3e08f48779b4f/09-Group-Policy-Examples/diasable%20dowmina%20firewwall.png)
 
 ---
 
