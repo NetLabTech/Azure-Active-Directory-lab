@@ -68,7 +68,7 @@ I added **Mike Davidson (Mike.Davidson@lab.local)** under *Security Filter
  Open the **Delegation** tab → click **Advanced** to view detailed permissions.
  Scroll down and make sure **Read** and **Apply Group Policy** are both checked as **Allow** for Mike Davidson.
 
-
+![image-alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/72a42515a9dff93b7cdf762dd5cdb33c441bc849/09-Group-Policy-Examples/advandce%20in%20deleagtion.png)
 
 This setup ensures that Mike Davidson can read and apply the GPO, but not modify or delete it.  
 It’s a clean way to test user‑level GPO application without giving admin rights.
@@ -81,19 +81,57 @@ Mike Davidson has permission to read and apply the policy, confirming that the
 
 
 
+---
 
+### Step 5 — Create a New GPO (Computer-Based Setting)
 
+In this example, I’m creating a **computer configuration GPO** to disable the domain firewall on domain machines.  
+This is purely for testing purposes — not something you’d normally do in production.
 
-### Step 4 — Link the GPO to an OU
-1. Right‑click the OU I want to test with (I used `Branch1`).
-2. Choose **Link an Existing GPO**.
-3. Select:
+1. In **Group Policy Management**, right-click **Group Policy Objects** → **New**.
+2. Name the new GPO:
    ```
-   TEST GPO
+   Disable Domain Firewall
    ```
-4. The GPO now shows up under that OU, meaning machines inside that OU will receive it.
+3. Leave **Source Starter GPO** as `(none)` and click **OK**.
+
+![image-alt](new-gpo-disable-domain-firewall.png)
 
 ---
+
+### Step 6 — Edit the GPO and Configure Firewall Settings
+
+Now that the GPO is created, I can edit its parameters.
+
+1. Right-click **Disable Domain Firewall** → **Edit**.
+2. Navigate to:
+   ```
+   Computer Configuration
+     └── Policies
+         └── Windows Settings
+             └── Security Settings
+                 └── Windows Defender Firewall with Advanced Security
+   ```
+3. Under **Domain Profile**, set:
+   - **Firewall state:** `Off`
+   - **Inbound connections:** `Not configured`
+   - **Outbound connections:** `Not configured`
+
+![image-alt](disable-domain-firewall-settings.png)
+
+This confirms it’s a **Computer Configuration GPO** — if you tried to apply it to a user via Security Filtering, it wouldn’t work because the settings are computer-based.
+
+Once configured, close the editor and click **Refresh** in the Group Policy Management Console.  
+You’ll now see a list of defined settings under the GPO’s **Settings** tab.
+
+---
+
+### ✅ Result
+The **Disable Domain Firewall** GPO is now configured and ready for testing.  
+It demonstrates how computer-level policies apply to domain machines, separate from user-level configurations.
+
+
+
 
 ### Step 5 — Test the GPO on a Client
 On the client PC (`PC1.lab.local`):
