@@ -117,7 +117,7 @@ Now that the GPO is created, I can edit its parameters.
    - **Inbound connections:** `Not configured`
    - **Outbound connections:** `Not configured`
 
-![image-alt](disable-domain-firewall-settings.png)
+![image-alt](https://github.com/NetLabTech/Azure-Active-Directory-lab/blob/049658667e4a957b9e2d4f770932b0e927746a5d/09-Group-Policy-Examples/windows%20defeander%20firewall%20OFF.png)
 
 This confirms it’s a **Computer Configuration GPO** — if you tried to apply it to a user via Security Filtering, it wouldn’t work because the settings are computer-based.
 
